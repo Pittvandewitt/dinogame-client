@@ -7,6 +7,14 @@ export default class GameContainer extends Component {
     new Runner('.interstitial-wrapper')
   }
 
+  componentWillUnmount() {
+    /** 
+     * Reload window to clean up Runner leftovers.
+     * This doesn't happen automatically somehow.
+    */
+    window.location.reload()
+  }
+
   render() {
     return <div id="main-frame-error" className="interstitial-wrapper" jstcache="0" />
   }
