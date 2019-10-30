@@ -1,1 +1,1 @@
-export const URL = 'http://192.168.2.10:4000'
+export const URL = 'https://boiling-mountain-60923.herokuapp.com'
