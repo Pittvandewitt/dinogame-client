@@ -1,4 +1,4 @@
-import { SET_NAME, SET_ERROR } from '../actions/playerActions'
+import { SET_NAME, SET_ERROR, LOGOUT } from '../actions/playerActions'
 
 const initialState = {
   jwt: null,
@@ -13,6 +13,8 @@ export default (state = initialState, action = {}) => {
       return { ...state, ...action.payload }
     case SET_ERROR:
       return { ...state, error: action.payload }
+    case LOGOUT:
+      return initialState
     default:
       return state
   }

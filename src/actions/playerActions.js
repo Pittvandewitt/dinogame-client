@@ -3,6 +3,7 @@ import { URL } from '../constants'
 
 export const SET_NAME = 'SET_NAME'
 export const SET_ERROR = 'SET_ERROR'
+export const LOGOUT = 'LOGOUT'
 
 export const login = (data) => {
   return (dispatch) => {
@@ -18,5 +19,11 @@ export const login = (data) => {
         type: SET_ERROR,
         payload: error.response.text
       }))
+  }
+}
+
+export const logout = () => {
+  return {
+    type: LOGOUT
   }
 }
