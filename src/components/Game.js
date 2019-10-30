@@ -15,10 +15,10 @@ import { URL } from '../constants'
 */
 export default function Runner(outerContainerId, opt_config) {
   // // Singleton
-  // if (Runner.instance_) {
-  //   return Runner.instance_;
-  // }
-  // Runner.instance_ = this;
+  if (Runner.instance_) {
+    return Runner.instance_;
+  }
+  Runner.instance_ = this;
   this.outerContainerEl = document.querySelector(outerContainerId);
   this.containerEl = null;
   this.detailsButton = this.outerContainerEl.querySelector('#details-button');

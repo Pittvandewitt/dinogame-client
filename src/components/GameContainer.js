@@ -4,7 +4,7 @@ import Runner from './Game.js'
 export default class GameContainer extends Component {
 
   componentDidMount() {
-    new Runner('.interstitial-wrapper', null)
+    new Runner('.interstitial-wrapper')
   }
 
   render() {

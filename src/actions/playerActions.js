@@ -23,6 +23,7 @@ export const login = (data) => {
 }
 
 export const logout = () => {
+  window.location.reload()
   return {
     type: LOGOUT
   }
